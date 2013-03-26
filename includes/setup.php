@@ -40,11 +40,11 @@ $offset = timeZone($json_output->timeZone);
 $DST ? $offset++ : $offset;
 
 function sunrise($lat, $long, $timezone, $DST) {	
-	echo twentyFourToTwelve(date_sunrise(time(), SUNFUNCS_RET_STRING, $lat, $long, 90, $timezone));
+	echo twentyFourToTwelve(date_sunrise(time(), SUNFUNCS_RET_STRING, $lat, $long, 90, $timezone + $DST));
 }
 
 function sunset($lat, $long, $timezone, $DST) {
-	echo twentyFourToTwelve(date_sunset(time(), SUNFUNCS_RET_STRING, $lat, $long, 90, $timezone));
+	echo twentyFourToTwelve(date_sunset(time(), SUNFUNCS_RET_STRING, $lat, $long, 90, $timezone + $DST));
 }
 
 function moonrise($moon, $lat, $long, $DST) {
