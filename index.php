@@ -11,11 +11,12 @@
 		<link rel="shortcut icon" href="images/favicon.ico"/>
 		<link rel="icon" type="image/ico" href="images/favicon.ico"/>
 		
-		<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Buenard' rel='stylesheet' type='text/css'>
 
-		<link rel="stylesheet" href="css/style-index.css" />
+		<!-- uncompressed CSS file found at css/style-index.css for those that wish to take a peek -->
+		<link rel="stylesheet" href="css/style-index.min.css" />
 
 		<?php
 			include('includes/setup.php');
