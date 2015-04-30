@@ -1,2 +1,10 @@
 
 .DS_Store
+
+Gruntfile.js
+
+package.json
+
+images/.DS_Store
+
+node_modules/

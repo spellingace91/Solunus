@@ -1,5 +1,6 @@
 <div class="container" id="container-footer">
 	<footer>
+<!--
 		<div id="top-places">
 			<h5>Some top places &raquo;</h5>
 			<ul>
@@ -17,12 +18,15 @@
 				</li>
 			</ul>
 		</div>
+-->
 		<p>© <?php 
 		$copyYear = 2012; 
 		$curYear = date('Y'); 
 		echo $copyYear . (($copyYear != $curYear) ? '-' . $curYear : '');
 		?>
 		<a href="http://www.johnminnich.com">John Minnich</a>
+		|
+		
 		
 		</p>
 	</footer>

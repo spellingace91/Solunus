@@ -14,7 +14,11 @@
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Buenard' rel='stylesheet' type='text/css'>
 		
-		<link rel="stylesheet" href="css/style-about.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+		<script src="js/solunus.about.min.js"></script>
+		
+<!-- 		<link rel="stylesheet" href="css/style-about.css" /> -->
+        <link rel="stylesheet" href="css/solunus.min.css" />
 	</head>
 	<body>
 		<div id="wrapper">
@@ -61,12 +65,8 @@
 			<?php include('includes/footer-about.php'); ?>
 			
 		</div>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
-		<script src="js/modal.popup.js"></script>
-		<script src="js/jquery.backstretch.min.js"></script>
-		<script src="js/functions.js"></script>
 		<script>
-			$.backstretch('images/pricesforksunset.jpg');
+			$.backstretch('images/thimblepeak.jpg');
 		</script>
 	</body>
 </html>

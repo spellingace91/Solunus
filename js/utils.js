@@ -1,21 +1,41 @@
-$(document).ready(function() {
-	$('#top-places li a').click(function(e) {
-		var toShow = this.id.substr(this.id.length - 1);
-		if (toShow === 1) {
-			$.backstretch('images/DSC_0004.jpg');
-			/*
-$.backstretch([
-				"../images/DSC_0004.jpg"
-			,	"../images/blacksburg_drillfield_sunset.jpg"
-			,	"../images/DSC_0037.jpg"
-			,	"../images/DSC_0064.jpg"], {duration: 3000, fade: 750});
-*/
-		}
-		$('div.city:visible').fadeOut(0, function() {
-			$('#city-' + toShow).fadeIn(0);
-		});
-	})
-});
+function toRadians(angle) {
+    return angle * (Math.PI / 180);
+}
+
+function toDegrees(angle) {
+    return angle * (180 / Math.PI);
+}
+
+function getInRange(value, lowerRange, upperRange) {
+    if (value < lowerRange) {
+        value += upperRange;
+    }
+    else if (value > upperRange) {
+        value -= upperRange;
+    }
+    
+    return value
+}
+
+
+function formatTimes(time) {
+    if (time < 0) {
+     time = 24 + time;
+    }
+    
+    var hours = Math.floor(time),
+        twelveHours = hours === 0 ? 12 : hours % 12,
+        minutes = pad( Math.floor((time % 1) * 60), 2 ),
+        meridian  = hours > 12 ? "pm" : "am";
+        
+    return twelveHours + ":" + minutes + " " + meridian;
+}
+
+function pad( n, width, z ) {
+     z = z || "0";
+     n = n + '';
+     return n.length >= width ? n : new Array(width - n.length + 1).join(z) + n;
+}
 
 $(document).ready(function() {
             
